@@ -4,5 +4,8 @@ excuses = [
     [ "car.", "cat.", "couch.", "door.", "television.", "computer case.", "carpet", "grenade.", "soldier.", "lettuce." ]
 ]
 // A funny list, you can create a pull request to add something :]
-const generated_excuse = excuses[0][Math.floor(Math.random() * excuses[0].length)] + excuses[1][Math.floor(Math.random() * excuses[1].length)] + excuses[2][Math.floor(Math.random() * excuses[2].length)]; 
-console.log(generated_excuse);
+generated_excuse = []
+
+for (choice_first of excuses) generated_excuse.push(choice_first[Math.floor(Math.random() * choice_first.length)])
+
+console.log(generated_excuse.join(" "));
